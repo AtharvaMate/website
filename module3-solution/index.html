@@ -1,202 +1,92 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-}
+<!DOCTYPE html>
 
-.container {
-    border: 1px solid #000;
-    background-color: #95E1D3;
-}
+<html lang="en">
 
-h3 {
-    float: right;
-    width: 30%;
-    padding: 5px 0;
-    text-align: center;
-    border-bottom: 1px solid #000;
-    border-left: 1px solid #000;
-    font-size: 125%;
-    background-color: #EAFFD0;
-}
+    <head>
+        <meta charset="UTF-8">
 
-h1 {
-    padding: 2%;
-    text-align: center;
-    font-size: 175%;
-}
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-p {
-    padding: 4%;
-    clear: right;
-    font-size: 100%;
-}
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-/*Style in large screen*/
-@media (min-width: 992px) {
-    .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
-        float: left;
-        padding: 1.5%;
-    }
-    
-    .col-lg-1 {
-        width: 8.33%;
-    }
-    
-    .col-lg-2 {
-        width: 16.66%;
-    }
-    
-    .col-lg-3 {
-        width: 25%;
-    }
-    
-    .col-lg-4 {
-        width: 33.33%;
-    }
-    
-    .col-lg-5 {
-        width: 41.66%;
-    }
-    
-    .col-lg-6 {
-        width: 50%;
-    }
-    
-    .col-lg-7 {
-        width: 58.33%;
-    }
-    
-     .col-lg-8 {
-        width: 66.66%;
-    }
-    
-    .col-lg-9 {
-        width: 75%;
-    }
-    
-    .col-lg-10 {
-        width: 83.33%;
-    }
-    
-    .col-lg-11 {
-        width: 91.66%;
-    }
-    
-    .col-lg-12 {
-        width: 100%;
-    }
-}
+        <title>Menu</title>
 
-/*Style in mediam screen (TABLET)*/
-@media (max-width: 991px) and (min-width: 768px) {
-    .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
-        float: left;
-        padding: 1.5%;
-    }
-    
-    .col-md-1 {
-        width: 8.33%;
-    }
-    
-    .col-md-2 {
-        width: 16.66%;
-    }
-    
-    .col-md-3 {
-        width: 25%;
-    }
-    
-    .col-md-4 {
-        width: 33.33%;
-    }
-    
-    .col-md-5 {
-        width: 41.66%;
-    }
-    
-    .col-md-6 {
-        width: 50%;
-    }
-    
-    .col-md-7 {
-        width: 58.33%;
-    }
-    
-    .col-md-8 {
-        width: 66.66%;
-    }
-    
-    .col-md-9 {
-        width: 75%;
-    }
-    
-    .col-md-10 {
-        width: 83.33%;
-    }
-    
-    .col-md-11 {
-        width: 91.66%;
-    }
-    
-    .col-md-12 {
-        width: 100%;
-    }
-}
+        <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
 
-/*style in small screen (phone)*/
-@media (max-width: 767px) {
-    .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
-        float: left;
-        padding: 1.5%;
-    }
-    
-    .col-sm-1 {
-        width: 8.33%;
-    }
-    
-    .col-sm-2 {
-        width: 16.66%;
-    }
-    
-    .col-sm-3 {
-        width: 25%;
-    }
-    
-    .col-sm-4 {
-        width: 33.33%;
-    }
-    
-    .col-sm-5 {
-        width: 41.66%;
-    }
-    
-    .col-sm-6 {
-        width: 50%;
-    }
-    
-    .col-sm-7 {
-        width: 58.33%;
-    }
-    
-    .col-sm-8 {
-        width: 66.66%;
-    }
-    
-    .col-sm-9 {
-        width: 75%;
-    }
-    
-    .col-sm-10 {
-        width: 83.33%;
-    }
-    
-    .col-sm-11 {
-        width: 91.66%;
-    }
-    
-    .col-sm-12 {
-        width: 100%;
-    }    
-}
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        <header>
+           <nav class="navbar navbar-expand-lg navbar-light bg-light">
+              <div class="container">
+                  <a class="navbar-brand" href="#">Food, LLC</a>
+              
+                  <button class="navbar-toggler d-md-none" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                      <li class="nav-item text-center d-sm-none">
+                        <a class="nav-link" href="#">Chicken</a>
+                      </li>
+
+                      <li class="nav-item text-center d-sm-none">
+                        <a class="nav-link" href="#">Beef</a>
+                      </li>
+
+                      <li class="nav-item text-center d-sm-none">
+                        <a class="nav-link disabled" href="#">Sushi</a>
+                      </li>
+                    </ul>
+                  </div>
+              </div>
+            </nav>
+        </header>
+        
+        <div class="container">
+            <h2 class="text-center">Our menu</h2>
+
+            <section class="col-xs-12">
+
+                <h3 class="text-center">Chicken</h3>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia dolores qui ad, soluta consequuntur magni assumenda ipsa nulla facere alias repellendus expedita a error? Pariatur repellat consectetur fugiat, velit quam quaerat adipisci nam magnam dolorem aperiam, odit cum eveniet in, quibusdam. Ratione sint, enim placeat dicta vero aliquid voluptatibus nemo saepe nam ipsa delectus rerum accusamus dolorem sunt repudiandae perspiciatis officia, sequi odio beatae ut modi quod nisi perferendis alias. Placeat officiis optio, itaque aperiam quidem, officia assumenda voluptatem sit, at facilis alias excepturi repudiandae iure minus commodi, blanditiis cupiditate nam doloremque nihil. Porro, unde sit hic blanditiis voluptates. Suscipit quae sint tenetur in qui doloribus assumenda ut a neque repellendus aliquam, consequuntur fugit voluptatem totam nostrum pariatur ex voluptatibus, perspiciatis ratione? Quisquam expedita doloribus ab quaerat quidem unde, reiciendis numquam ullam corporis tenetur debitis sequi incidunt, quas voluptates magni enim officiis vero rem dolorem ut iure? Dignissimos culpa nihil quod voluptatibus delectus iure adipisci accusamus architecto velit aliquid eius numquam consequatur, beatae harum porro neque excepturi, vero molestias quas, fugiat asperiores animi eos provident. Similique quam, fuga aut cupiditate quae dicta architecto voluptatum nulla! Facilis, officia quam iusto consequatur quisquam perspiciatis asperiores consequuntur id, dolorum saepe nam laudantium. Est saepe amet maxime voluptatem cum, enim eius, natus dignissimos similique. Qui libero quo consequatur veritatis, ab fugit. Ducimus eveniet quia ad tempore ipsum laudantium obcaecati consequuntur, temporibus nihil facere consequatur quod officiis magnam vitae in ea repellendus natus quis debitis repudiandae placeat totam. Illo ipsum laudantium autem, beatae quisquam rerum optio eos. Minima asperiores est ea vero iste nam, dignissimos voluptas eaque, similique, nesciunt eum! Blanditiis sapiente praesentium repellat, veniam consectetur ipsam, eius doloremque ipsa dicta iusto explicabo ea aliquid, itaque, suscipit dolore. Nisi esse tempora, blanditiis magnam et aut illo animi dolores, recusandae mollitia veritatis hic tenetur molestias harum!
+                </p>
+
+            </section>
+
+            <section class="col-xs-12">
+
+                <h3 class="text-center">Beef</h3>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia dolores qui ad, soluta consequuntur magni assumenda ipsa nulla facere alias repellendus expedita a error? Pariatur repellat consectetur fugiat, velit quam quaerat adipisci nam magnam dolorem aperiam, odit cum eveniet in, quibusdam. Ratione sint, enim placeat dicta vero aliquid voluptatibus nemo saepe nam ipsa delectus rerum accusamus dolorem sunt repudiandae perspiciatis officia, sequi odio beatae ut modi quod nisi perferendis alias. Placeat officiis optio, itaque aperiam quidem, officia assumenda voluptatem sit, at facilis alias excepturi repudiandae iure minus commodi, blanditiis cupiditate nam doloremque nihil. Porro, unde sit hic blanditiis voluptates. Suscipit quae sint tenetur in qui doloribus assumenda ut a neque repellendus aliquam, consequuntur fugit voluptatem totam nostrum pariatur ex voluptatibus, perspiciatis ratione? Quisquam expedita doloribus ab quaerat quidem unde, reiciendis numquam ullam corporis tenetur debitis sequi incidunt, quas voluptates magni enim officiis vero rem dolorem ut iure? Dignissimos culpa nihil quod voluptatibus delectus iure adipisci accusamus architecto velit aliquid eius numquam consequatur, beatae harum porro neque excepturi, vero molestias quas, fugiat asperiores animi eos provident. Similique quam, fuga aut cupiditate quae dicta architecto voluptatum nulla! Facilis, officia quam iusto consequatur quisquam perspiciatis asperiores consequuntur id, dolorum saepe nam laudantium. Est saepe amet maxime voluptatem cum, enim eius, natus dignissimos similique. Qui libero quo consequatur veritatis, ab fugit. Ducimus eveniet quia ad tempore ipsum laudantium obcaecati consequuntur, temporibus nihil facere consequatur quod officiis magnam vitae in ea repellendus natus quis debitis repudiandae placeat totam. Illo ipsum laudantium autem, beatae quisquam rerum optio eos. Minima asperiores est ea vero iste nam, dignissimos voluptas eaque, similique, nesciunt eum! Blanditiis sapiente praesentium repellat, veniam consectetur ipsam, eius doloremque ipsa dicta iusto explicabo ea aliquid, itaque, suscipit dolore. Nisi esse tempora, blanditiis magnam et aut illo animi dolores, recusandae mollitia veritatis hic tenetur molestias harum!
+                </p>
+
+            </section>
+
+            <section class="col-xs-12">
+
+                <h3 class="text-center">Sushi</h3>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia dolores qui ad, soluta consequuntur magni assumenda ipsa nulla facere alias repellendus expedita a error? Pariatur repellat consectetur fugiat, velit quam quaerat adipisci nam magnam dolorem aperiam, odit cum eveniet in, quibusdam. Ratione sint, enim placeat dicta vero aliquid voluptatibus nemo saepe nam ipsa delectus rerum accusamus dolorem sunt repudiandae perspiciatis officia, sequi odio beatae ut modi quod nisi perferendis alias. Placeat officiis optio, itaque aperiam quidem, officia assumenda voluptatem sit, at facilis alias excepturi repudiandae iure minus commodi, blanditiis cupiditate nam doloremque nihil. Porro, unde sit hic blanditiis voluptates. Suscipit quae sint tenetur in qui doloribus assumenda ut a neque repellendus aliquam, consequuntur fugit voluptatem totam nostrum pariatur ex voluptatibus, perspiciatis ratione? Quisquam expedita doloribus ab quaerat quidem unde, reiciendis numquam ullam corporis tenetur debitis sequi incidunt, quas voluptates magni enim officiis vero rem dolorem ut iure? Dignissimos culpa nihil quod voluptatibus delectus iure adipisci accusamus architecto velit aliquid eius numquam consequatur, beatae harum porro neque excepturi, vero molestias quas, fugiat asperiores animi eos provident. Similique quam, fuga aut cupiditate quae dicta architecto voluptatum nulla! Facilis, officia quam iusto consequatur quisquam perspiciatis asperiores consequuntur id, dolorum saepe nam laudantium. Est saepe amet maxime voluptatem cum, enim eius, natus dignissimos similique. Qui libero quo consequatur veritatis, ab fugit. Ducimus eveniet quia ad tempore ipsum laudantium obcaecati consequuntur, temporibus nihil facere consequatur quod officiis magnam vitae in ea repellendus natus quis debitis repudiandae placeat totam. Illo ipsum laudantium autem, beatae quisquam rerum optio eos. Minima asperiores est ea vero iste nam, dignissimos voluptas eaque, similique, nesciunt eum! Blanditiis sapiente praesentium repellat, veniam consectetur ipsam, eius doloremque ipsa dicta iusto explicabo ea aliquid, itaque, suscipit dolore. Nisi esse tempora, blanditiis magnam et aut illo animi dolores, recusandae mollitia veritatis hic tenetur molestias harum!
+                </p>
+
+            </section>
+        </div>
+
+
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+        
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    </body>
+</html>
