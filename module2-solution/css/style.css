@@ -1,0 +1,75 @@
+h1 {
+    text-align: center;
+    font-size: 175%;
+}
+
+body{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: auto;
+}
+
+.container{
+    width: 100%;
+}
+
+.box{
+    float: left;
+    height: auto;
+    margin-right: 2.5%;
+    margin-left: 1%;
+    border-style: solid;
+    background-color: gray;
+    position: relative;
+}
+
+.long-box{
+    float: left;
+    height: auto;
+    margin-left: 1%;
+    border-style: solid;
+    background-color: gray;
+    position: relative;
+}
+
+.box-title-box{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 200px;
+    border-left-style: solid;
+    border-bottom-style: solid;
+}
+
+.box-title{
+    font-size: 125%;
+    text-align: center;
+}
+
+.box-txt{
+    text-align: left;
+    padding: 10px;
+    padding-top: 25px;
+}
+
+@media (min-width: 992px) {
+    .box, .long-box{
+        width: 29.7%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .long-box{
+        width: 92%;
+        margin-top: 3.5%;
+    }
+    .box{
+        width: 43.7%;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+    .box, .long-box{
+        width: 93.7%;
+        margin-bottom: 3.5%;
+    }
+}
